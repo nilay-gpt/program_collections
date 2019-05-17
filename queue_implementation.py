@@ -24,7 +24,7 @@ if __name__ == "__main__":
     obj = QueueFunction()
 
     while True:
-        user_input = int(raw_input("Chose one option: 1>Enque \n 2>Deque \n 3>Stop\n"))
+        user_input = int(raw_input("Choose one option: 1>Enque \n 2>Deque \n 3>Stop\n"))
         if user_input == 1:
             _input = raw_input("Enter the value:")
             obj.enque(_input)
@@ -36,4 +36,4 @@ if __name__ == "__main__":
             print  "The Final output is:", obj.enque_list
             exit()
         else:
-            print "Chose a valid option"
+            print "Choose a valid option"

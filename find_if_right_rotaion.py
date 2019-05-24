@@ -8,20 +8,16 @@ class IfRightRotation():
     def __init__(self, s1, s2):
         self.s1 = s1
         self.s2 = s2
+        self.super_string = self.s1 + self.s1
 
     def check_if_right_rotation(self):
-        super_string = self.s1 + self.s1
         if len(self.s1) != len(s2):
-            print False
-        if (super_string.count(s2) > 0):
-        # if self.s2 in super_string:
-            print True
-        else:
-            print False
+            return False
+        return True if self.super_string.count(s2) > 0 else False
 
 
 if __name__=="__main__":
     s1 = raw_input("Enter the S1: ")
     s2 = raw_input("Enter the S2: ")
     obj = IfRightRotation(s1, s2)
-    obj.check_if_right_rotation()
+    print obj.check_if_right_rotation()

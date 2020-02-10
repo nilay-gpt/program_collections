@@ -34,15 +34,11 @@ class PlatformCounter(object):
             if self.arrival[i] < self.departure[j]:
                 platform += 1
                 i +=1
-
                 if platform > result: result = platform
-
             else:
                 platform -= 1
                 j +=1
-
         return result
-
 
 
 if __name__ == "__main__":
